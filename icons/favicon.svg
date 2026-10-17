@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Anestesia Vet">
+  <rect width="512" height="512" rx="108" fill="#123f49"/>
+  <g fill="#f4fbf7">
+    <ellipse cx="174" cy="198" rx="28" ry="40" transform="rotate(-25 174 198)"/>
+    <ellipse cx="227" cy="153" rx="28" ry="40" transform="rotate(-8 227 153)"/>
+    <ellipse cx="286" cy="153" rx="28" ry="40" transform="rotate(8 286 153)"/>
+    <ellipse cx="339" cy="198" rx="28" ry="40" transform="rotate(25 339 198)"/>
+    <path d="M256 218c-35 0-43 27-64 48-21 22-30 53-10 68 18 15 44 3 74 3s56 12 74-3c20-15 11-46-10-68-21-21-29-48-64-48Z"/>
+  </g>
+  <path d="M245 251h22v22h22v22h-22v22h-22v-22h-22v-22h22Z" fill="#123f49"/>
+  <path d="M144 383h64l18-21 23 40 25-54 24 35h70" fill="none" stroke="#7bd3bd" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
