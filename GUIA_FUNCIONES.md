@@ -1,8 +1,10 @@
-# Anestesia Vet 3.21.4
+# Anestesia Vet 3.21.5
 
 Actualización de la base completa Anestesia Vet 3.20, localizada y verificada frente a la copia preparada para publicar. Mantiene el archivo de pacientes, múltiples anestesias, IndexedDB, formularios y autoguardado, auditoría y deshacer, verificaciones del equipo, evaluaciones, medicamentos, fluidos, ventilación, recuperación, dolor, CSV Berry Pet, gráfico único, informes, cámara individual anterior, perfiles previos y temas claro/oscuro.
 
 ## Analgesia simultánea
+
+En el primer selector, **CRI + bloqueo** muestra los controles de ambos componentes dentro del mismo plan. «Nueva CRI» abre su preparación y bomba; «+ Agregar bloqueo» confirma el bloqueo. Cada componente conserva sus cálculos, horarios e historial independientes. También siguen disponibles los modos CRI, Bloqueo y Fármaco.
 
 «Nueva CRI» abre una infusión con un medicamento. «+ Agregar medicamento a esta CRI» añade productos a la misma preparación y bomba. Para una segunda bomba creá otra CRI: tiene identificador, preparación, velocidad y estado propios. La aplicación no deduce mezclas de medicamentos antiguos ni los agrupa por tener el mismo nombre.
 
@@ -11,6 +13,12 @@ Ingresá dosis y unidad, concentración comercial, peso usado, volumen FINAL, di
 Los cambios de dosis, bomba, concentración, preparación, suspensión y reinicio son eventos nuevos con hora, motivo y profesional declarado. Cambiar la velocidad conserva la preparación y calcula las dosis que esa misma solución entregará. Una suspensión retira solamente esa infusión de las activas y mantiene el historial.
 
 El formulario individual existente sigue registrando bolos y bloqueos aunque haya CRI activas. El botón para añadir otro medicamento al mismo bloqueo conserva su asociación sin escribir identificadores. Los volúmenes totales y por lado continúan siendo datos separados. Las tarjetas se agrupan en infusiones, bloqueos y otras administraciones.
+
+## Decúbito y fluidoterapia
+
+Decúbito se elige en un desplegable: Dorsal, Esternal / ventral, Lateral derecho, Lateral izquierdo u Otro. Otro permite especificar una posición diferente; su descripción se muestra en el informe mientras esté elegida esa opción. Se conservan las posiciones históricas. Se quita Pulso · amplitud del formulario e informes, manteniendo frecuencia y regularidad.
+
+Fluidoterapia registra la solución, vía, tasa y bomba sin un selector Acción. El campo opcional de volumen de bolo registra mL; al completarlo se ocultan las tasas de mantenimiento para esa entrada. Las acciones de registros históricos se conservan internamente.
 
 ## Capturar ahora, revisar después
 
@@ -46,7 +54,7 @@ Al restaurar, abrí primero el caso JSON correspondiente y después restaurá su
 
 1. Exportá JSON y paquetes fotográficos antes de actualizar.
 2. Descomprimí el ZIP para publicar. Subí su contenido completo a la raíz de GitHub Pages; index.html, manifest.webmanifest, sw.js, .nojekyll e icons deben conservar su relación de carpetas. No hay compilación ni claves que configurar.
-3. Si ya usás la misma dirección y navegador, la actualización conserva las identidades de almacenamiento 3.20. Cerrá otras ventanas de la app, esperá el guardado y aceptá la actualización disponible desde la ayuda cuando corresponda. Verificá el encabezado 3.21.4.
+3. Si ya usás la misma dirección y navegador, la actualización conserva las identidades de almacenamiento 3.20. Cerrá otras ventanas de la app, esperá el guardado y aceptá la actualización disponible desde la ayuda cuando corresponda. Verificá el encabezado 3.21.5.
 4. Si cambiás de dominio, carpeta de publicación, navegador o dispositivo, exportá e importá los respaldos: el almacenamiento no se traslada por publicar el HTML en otra dirección.
 
 La captura y la galería no necesitan conexión para guardar, cuando el navegador permite cámara y almacenamiento. La PWA requiere una primera carga completa por HTTPS para disponer de su interfaz sin conexión. El OCR conserva Tesseract local del flujo anterior y puede necesitar internet inicialmente para descargar biblioteca, modelo y motor; la galería permite seguir capturando aunque esos recursos no estén disponibles. El dictado conserva las restricciones anteriores del navegador.

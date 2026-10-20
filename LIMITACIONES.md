@@ -1,4 +1,4 @@
-# Límites conocidos de Anestesia Vet 3.21.4
+# Límites conocidos de Anestesia Vet 3.21.5
 
 - Las pruebas no validan exactitud clínica del OCR. Cada foto exige revisión humana antes de crear o corregir una medición; una coincidencia geométrica correcta no acredita que los dígitos estén bien reconocidos.
 - Se ensayó la alineación con imágenes sintéticas, distintas escalas, perspectivas, giros de 90° y 180°, números cambiantes e imágenes incompatibles. Pueden fallar fotos borrosas, reflejos, baja resolución o monitores sin suficientes referencias fijas: se solicita corregir esquinas, sin inventar lecturas.

@@ -1,29 +1,36 @@
 {
-  "version": "3.21.4",
-  "date": "2026-10-19",
+  "version": "3.21.5",
+  "date": "2026-10-20",
   "tests": {
-    "passed": 36,
-    "total": 36,
+    "passed": 68,
+    "total": 68,
     "uncaughtJavaScriptErrors": 0,
     "physicalDeviceTests": false,
-    "browserDownloadVerified": false,
-    "limitations": [
-      "Chrome en este entorno cancela descargas Blob incluso en una página vacía; se validaron el evento real de descarga, nombre y los bytes del Blob JSON generado.",
-      "No se probó un dispositivo físico."
-    ],
-    "preservedInlineModules": 24,
-    "modifiedBaseModules": 1,
-    "addedResetModules": 1,
+    "visualMobileScreenshots": 6,
+    "realPDFGenerated": true,
+    "pdfVisualReviewed": true,
+    "preservedInlineModules": 17,
+    "modifiedInlineModules": 9,
     "suites": [
       {
-        "suite": "reset",
-        "passed": 20,
-        "count": 20
+        "suite": "combined-and-simpler-forms",
+        "passed": 22,
+        "count": 22
+      },
+      {
+        "suite": "bilateral-block-dose",
+        "passed": 23,
+        "count": 23
       },
       {
         "suite": "preserved-regression",
         "passed": 16,
         "count": 16
+      },
+      {
+        "suite": "focused-real-pdf",
+        "passed": 7,
+        "count": 7
       }
     ]
   },
@@ -40,8 +47,8 @@
     },
     {
       "path": "GUIA_FUNCIONES.md",
-      "bytes": 8361,
-      "sha256": "0879b3b17cff514fa47973280cc978f3bca79f32584e3ccf1e6352af6f406653"
+      "bytes": 9364,
+      "sha256": "8791ce044ba5f8c82ae87174156095e62d57be873117506ae0cbbe0b08879267"
     },
     {
       "path": "icons/apple-touch-icon.png",
@@ -75,23 +82,23 @@
     },
     {
       "path": "index.html",
-      "bytes": 2450495,
-      "sha256": "45b915b55adfc4807e1ee87ed386dfa57ae86c8a5d3bf7729f80acfd426a3802"
+      "bytes": 2454470,
+      "sha256": "6471755a6501ab44f8bff94c9a038864872bcafd37dd97e2d587dbc8478e9035"
     },
     {
       "path": "LEEME.md",
-      "bytes": 2200,
-      "sha256": "a7ec0a8cc715034c591687afd4175a9f9d5e835771c8a0875f8221c513d053e6"
+      "bytes": 2470,
+      "sha256": "8a20484701e3f4d7f81543aa47822a85d87911529efcfb17ac2891d10266d0b2"
     },
     {
       "path": "LIMITACIONES.md",
       "bytes": 3215,
-      "sha256": "52c43c408ed87fc17c3916eb339cacbe65572deb2231c1ba7ada088b9ff640d4"
+      "sha256": "89d8c82c162d8d8845fa18a98bf5b43eaf2b98e3e8a501b4c2fcb87391f24213"
     },
     {
       "path": "manifest.webmanifest",
       "bytes": 971,
-      "sha256": "9ca4f8e91e2f041e14f2a56c9ed2585d6964c14ff48312885db4d81639e5752f"
+      "sha256": "51eba832cc7b78195db7364dd1ce15bd16c428774c16575bbe52894504743fe2"
     },
     {
       "path": "PROTOCOLO_DISPOSITIVOS.md",
@@ -100,13 +107,13 @@
     },
     {
       "path": "PRUEBAS.md",
-      "bytes": 2367,
-      "sha256": "f5d96c1540465ccbdf8c897a6b4a9dfd869db9055362011bd7f8a51946883c69"
+      "bytes": 3660,
+      "sha256": "d68cc796684b03fc8258b4abd1925c1c14e87668e206df1033b49c1f55faf8cd"
     },
     {
       "path": "sw.js",
       "bytes": 3301,
-      "sha256": "82f7e9bdd32a02fe18b5af50ea3b5b271eb6fc54c77be746b868e25bb0239f6f"
+      "sha256": "504d79666c9a6084dd2e624225f902c8656d986a7448847bc59dde42ee4570b9"
     },
     {
       "path": "_headers",
