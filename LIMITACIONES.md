@@ -1,0 +1,15 @@
+# Límites conocidos de Anestesia Vet 3.21.4
+
+- Las pruebas no validan exactitud clínica del OCR. Cada foto exige revisión humana antes de crear o corregir una medición; una coincidencia geométrica correcta no acredita que los dígitos estén bien reconocidos.
+- Se ensayó la alineación con imágenes sintéticas, distintas escalas, perspectivas, giros de 90° y 180°, números cambiantes e imágenes incompatibles. Pueden fallar fotos borrosas, reflejos, baja resolución o monitores sin suficientes referencias fijas: se solicita corregir esquinas, sin inventar lecturas.
+- La cámara utiliza las capacidades disponibles del navegador. Las opciones horizontal/vertical y los giros modifican el encuadre o los píxeles; no prometen bloquear la orientación física del teléfono. El acceso a cámara en vivo normalmente requiere HTTPS y permiso del dispositivo.
+- El flujo individual de cámara y OCR anterior sigue accesible en opciones avanzadas. El procesamiento por lote y la lectura individual se serializan para evitar mezclar su estado. Una imagen en curso puede demorar unos instantes en terminar al detener el lote; sus resultados guardados permanecen.
+- Las fechas EXIF sin zona horaria se identifican como tales y deben revisarse. Una imagen sin EXIF no recibe como hora de captura la hora de procesamiento. El reloj del teléfono puede ser incorrecto: se conserva la hora original y se permite una corrección justificada.
+- El JSON clínico no incluye la galería completa. Se necesita además .avphotos por caso, que conserva imágenes y perfiles. Restaurar a otro identificador de caso exige revisar la asociación y reconfirmar mediciones.
+- El navegador puede limitar, rechazar o retirar almacenamiento. La cuota es aproximada. El programa informa fallos; no elimina originales para liberar espacio. Mantener copias externas sigue siendo necesario.
+- La calculadora de CRI comprueba unidades y volúmenes; no determina dosis terapéuticas, compatibilidad, estabilidad, esterilidad, exactitud de jeringas o bombas ni límites seguros para cada paciente. Los ejemplos de las pruebas usan medicamentos ficticios y no son recetas.
+- Los registros antiguos sin identificador de bomba se mantienen como históricos y no se convierten en mezclas. Los responsables son declarados; la app no autentica su identidad.
+- El guardado de fotos es local. El servidor estático de GitHub Pages o Netlify no recibe ni respalda automáticamente los casos. Cambiar de dirección o navegador requiere traslado manual de respaldos.
+- El OCR puede necesitar red inicialmente para descargar los recursos de Tesseract; guardar fotos y la revisión manual funcionan de forma independiente. No se incorporó una versión distinta del motor a modo de sustitución silenciosa.
+- Las mediciones de rendimiento provienen de Chrome en una computadora con 100 imágenes JPEG sintéticas de 1920 × 1080, de aproximadamente 1 MB cada una. No garantizan esos tiempos en Android, imágenes de mayor resolución o dispositivos con menos memoria.
+- No se ejecutaron pruebas físicas en Xiaomi 15 Pro, otras cámaras Android, tablets ni monitores reales. El protocolo adjunto está pendiente de ejecución en esos dispositivos.

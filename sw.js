@@ -1,7 +1,7 @@
-/* Anestesia Vet 3.20. Offline shell only: this worker never opens clinical storage. */
+/* Anestesia Vet 3.21.4. Offline shell only: this worker never opens clinical storage. */
 'use strict';
-const APP_VERSION='3.20-20261017-r2';
-const SHELL_HASH='3783781d82b451624faa11b9';
+const APP_VERSION='3.21.4-20261019-r1';
+const SHELL_HASH='45b915b55adfc4807e1ee87e';
 const APP_SCOPE=new URL(self.registration.scope);
 const CACHE_PREFIX=`anestesia-vet:${APP_SCOPE.pathname}:shell:`;
 const CACHE_NAME=`${CACHE_PREFIX}${APP_VERSION}:${SHELL_HASH}`;

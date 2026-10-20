@@ -1,0 +1,117 @@
+{
+  "version": "3.21.4",
+  "date": "2026-10-19",
+  "tests": {
+    "passed": 36,
+    "total": 36,
+    "uncaughtJavaScriptErrors": 0,
+    "physicalDeviceTests": false,
+    "browserDownloadVerified": false,
+    "limitations": [
+      "Chrome en este entorno cancela descargas Blob incluso en una página vacía; se validaron el evento real de descarga, nombre y los bytes del Blob JSON generado.",
+      "No se probó un dispositivo físico."
+    ],
+    "preservedInlineModules": 24,
+    "modifiedBaseModules": 1,
+    "addedResetModules": 1,
+    "suites": [
+      {
+        "suite": "reset",
+        "passed": 20,
+        "count": 20
+      },
+      {
+        "suite": "preserved-regression",
+        "passed": 16,
+        "count": 16
+      }
+    ]
+  },
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "CALCULOS.md",
+      "bytes": 6054,
+      "sha256": "911b40fd02688856c0deee35d4f47f96e7c9d73d5c77f754316487d13ac5a17c"
+    },
+    {
+      "path": "GUIA_FUNCIONES.md",
+      "bytes": 8361,
+      "sha256": "0879b3b17cff514fa47973280cc978f3bca79f32584e3ccf1e6352af6f406653"
+    },
+    {
+      "path": "icons/apple-touch-icon.png",
+      "bytes": 8708,
+      "sha256": "5070c5bb9b1f836072c798179b640f5de6395fc5b1ed68ff98be3246f93c12c7"
+    },
+    {
+      "path": "icons/favicon.svg",
+      "bytes": 864,
+      "sha256": "7be655f0afce34906e708aef0ad1eb66de116efc50d432c5c2b601e1a6b79651"
+    },
+    {
+      "path": "icons/icon-192.png",
+      "bytes": 9247,
+      "sha256": "1bf657d277a5402546dc785b8a78016edd5a93b869902dd7570cc0ba4e968281"
+    },
+    {
+      "path": "icons/icon-512.png",
+      "bytes": 24433,
+      "sha256": "f9caf7ae5b7388b3839811824dccaa47c0471b9ce3bf7a5177ba9318f2893a16"
+    },
+    {
+      "path": "icons/icon-maskable-192.png",
+      "bytes": 9247,
+      "sha256": "1bf657d277a5402546dc785b8a78016edd5a93b869902dd7570cc0ba4e968281"
+    },
+    {
+      "path": "icons/icon-maskable-512.png",
+      "bytes": 24433,
+      "sha256": "f9caf7ae5b7388b3839811824dccaa47c0471b9ce3bf7a5177ba9318f2893a16"
+    },
+    {
+      "path": "index.html",
+      "bytes": 2450495,
+      "sha256": "45b915b55adfc4807e1ee87ed386dfa57ae86c8a5d3bf7729f80acfd426a3802"
+    },
+    {
+      "path": "LEEME.md",
+      "bytes": 2200,
+      "sha256": "a7ec0a8cc715034c591687afd4175a9f9d5e835771c8a0875f8221c513d053e6"
+    },
+    {
+      "path": "LIMITACIONES.md",
+      "bytes": 3215,
+      "sha256": "52c43c408ed87fc17c3916eb339cacbe65572deb2231c1ba7ada088b9ff640d4"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "bytes": 971,
+      "sha256": "9ca4f8e91e2f041e14f2a56c9ed2585d6964c14ff48312885db4d81639e5752f"
+    },
+    {
+      "path": "PROTOCOLO_DISPOSITIVOS.md",
+      "bytes": 4256,
+      "sha256": "5c4b47741015bfd10aafd19933e377e0c4214871dbae37e50d59ab3d14d518b6"
+    },
+    {
+      "path": "PRUEBAS.md",
+      "bytes": 2367,
+      "sha256": "f5d96c1540465ccbdf8c897a6b4a9dfd869db9055362011bd7f8a51946883c69"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 3301,
+      "sha256": "82f7e9bdd32a02fe18b5af50ea3b5b271eb6fc54c77be746b868e25bb0239f6f"
+    },
+    {
+      "path": "_headers",
+      "bytes": 71,
+      "sha256": "a3d50914d970cd233ced19c667d14b2131adbb3d9e72c767d0c38e54d1139589"
+    }
+  ]
+}
