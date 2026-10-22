@@ -1,4 +1,4 @@
-# Límites conocidos de Anestesia Vet 3.21.5
+# Límites conocidos de Anestesia Vet 3.22
 
 - Las pruebas no validan exactitud clínica del OCR. Cada foto exige revisión humana antes de crear o corregir una medición; una coincidencia geométrica correcta no acredita que los dígitos estén bien reconocidos.
 - Se ensayó la alineación con imágenes sintéticas, distintas escalas, perspectivas, giros de 90° y 180°, números cambiantes e imágenes incompatibles. Pueden fallar fotos borrosas, reflejos, baja resolución o monitores sin suficientes referencias fijas: se solicita corregir esquinas, sin inventar lecturas.
@@ -13,3 +13,7 @@
 - El OCR puede necesitar red inicialmente para descargar los recursos de Tesseract; guardar fotos y la revisión manual funcionan de forma independiente. No se incorporó una versión distinta del motor a modo de sustitución silenciosa.
 - Las mediciones de rendimiento provienen de Chrome en una computadora con 100 imágenes JPEG sintéticas de 1920 × 1080, de aproximadamente 1 MB cada una. No garantizan esos tiempos en Android, imágenes de mayor resolución o dispositivos con menos memoria.
 - No se ejecutaron pruebas físicas en Xiaomi 15 Pro, otras cámaras Android, tablets ni monitores reales. El protocolo adjunto está pendiente de ejecución en esos dispositivos.
+
+- Las pruebas de navegación incluyen Chrome y Edge de escritorio, tamaños de teléfono/tablet y reducción del área visible para simular teclado. No sustituyen una prueba con Chrome Android y su teclado/cámara físicos.
+- El cursor del gráfico distingue lecturas cercanas y sus horas. Las bandas son escalas de visualización ajustadas a los datos, sin umbrales de normalidad ni recomendaciones clínicas.
+- Los resúmenes PDF reproducen registros y notas confirmados; no constituyen por sí mismos un alta ni instrucciones de tratamiento.

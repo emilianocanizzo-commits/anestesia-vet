@@ -35,3 +35,12 @@ Revisar cada parámetro contra la fotografía visible; dejar vacíos los ausente
 Descargar JSON y .avphotos. Restaurar primero el caso y después sus fotos en un perfil de navegador de prueba. Comprobar integridad de originales, perfiles, horarios, OCR detectado, valores confirmados, correcciones y vínculos. Reimportar el mismo paquete debe evitar duplicados idénticos. Probar paquete incompleto: informar error y conservar lo ya almacenado.
 
 Generar ambos PDF con mezcla, bloqueo y fotografías confirmadas. Revisar que figure una sola curva, dosis, concentraciones, bomba y cambios. Deben aparecer las dos tablas de parámetros por hora, completas y con encabezados repetidos al cambiar de página. Los valores deben coincidir con la app, conservando ceros, decimales, ausentes y la marca de PAM estimada. No deben insertarse automáticamente las fotos de galería. Registrar capturas de problemas, tiempos y resultado por dispositivo antes de considerar aprobada la prueba física.
+
+
+## Comprobaciones adicionales de 3.22
+
+1. En Chrome Android, cambiar pestañas largas: título visible bajo la barra y sin saltos al escribir, abrir/cerrar teclado o guardar parámetros/eventos.
+2. Abrir y contraer gráfico, mediciones y herramientas; verificar que conserva datos y estado al volver al mismo caso. Consultar cursor, rangos, leyenda y tema oscuro en vertical y horizontal.
+3. Abrir cámara con una foto histórica guardada; distinguir video y guía fantasma. Reiniciar, cerrar, enviar al fondo y volver: comprobar permiso, liberación de cámara y reintento. Tomar varias fotos y confirmar que quedan pendientes sin OCR.
+4. Elegir, crear, editar y restablecer perfiles; verificar que conserva versiones y fotos previas. Cambiar de paciente durante una selección lenta y comprobar que no aparece la referencia anterior.
+5. Descargar los informes completo, colega, tutor y auditoría en el teléfono; comprobar apertura, legibilidad y contenido. Exportar y restaurar un respaldo de prueba con JSON y .avphotos antes de usar datos reales.

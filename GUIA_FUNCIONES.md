@@ -1,4 +1,6 @@
-# Anestesia Vet 3.21.5
+# Anestesia Vet 3.22
+
+Para la navegación compacta, el gráfico por bandas, cámara/perfiles y los nuevos informes, consultá LEEME.md e INFORMES.md. El texto siguiente describe las funciones conservadas de la base.
 
 Actualización de la base completa Anestesia Vet 3.20, localizada y verificada frente a la copia preparada para publicar. Mantiene el archivo de pacientes, múltiples anestesias, IndexedDB, formularios y autoguardado, auditoría y deshacer, verificaciones del equipo, evaluaciones, medicamentos, fluidos, ventilación, recuperación, dolor, CSV Berry Pet, gráfico único, informes, cámara individual anterior, perfiles previos y temas claro/oscuro.
 
@@ -54,7 +56,7 @@ Al restaurar, abrí primero el caso JSON correspondiente y después restaurá su
 
 1. Exportá JSON y paquetes fotográficos antes de actualizar.
 2. Descomprimí el ZIP para publicar. Subí su contenido completo a la raíz de GitHub Pages; index.html, manifest.webmanifest, sw.js, .nojekyll e icons deben conservar su relación de carpetas. No hay compilación ni claves que configurar.
-3. Si ya usás la misma dirección y navegador, la actualización conserva las identidades de almacenamiento 3.20. Cerrá otras ventanas de la app, esperá el guardado y aceptá la actualización disponible desde la ayuda cuando corresponda. Verificá el encabezado 3.21.5.
+3. Si ya usás la misma dirección y navegador, la actualización conserva las identidades de almacenamiento 3.20. Cerrá otras ventanas de la app, esperá el guardado y aceptá la actualización disponible desde la ayuda cuando corresponda. Verificá el encabezado 3.22.
 4. Si cambiás de dominio, carpeta de publicación, navegador o dispositivo, exportá e importá los respaldos: el almacenamiento no se traslada por publicar el HTML en otra dirección.
 
 La captura y la galería no necesitan conexión para guardar, cuando el navegador permite cámara y almacenamiento. La PWA requiere una primera carga completa por HTTPS para disponer de su interfaz sin conexión. El OCR conserva Tesseract local del flujo anterior y puede necesitar internet inicialmente para descargar biblioteca, modelo y motor; la galería permite seguir capturando aunque esos recursos no estén disponibles. El dictado conserva las restricciones anteriores del navegador.

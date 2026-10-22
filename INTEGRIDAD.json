@@ -1,37 +1,103 @@
 {
-  "version": "3.21.5",
-  "date": "2026-10-20",
+  "version": "3.22",
+  "date": "2026-10-21",
   "tests": {
-    "passed": 68,
-    "total": 68,
+    "passed": 191,
+    "total": 191,
     "uncaughtJavaScriptErrors": 0,
     "physicalDeviceTests": false,
-    "visualMobileScreenshots": 6,
-    "realPDFGenerated": true,
+    "desktopBrowsers": [
+      "Chrome",
+      "Microsoft Edge"
+    ],
+    "keyboardViewportEmulation": true,
+    "pdfGenerated": 4,
+    "pdfRenderedPages": 21,
     "pdfVisualReviewed": true,
-    "preservedInlineModules": 17,
-    "modifiedInlineModules": 9,
+    "unchangedBaseModules": 15,
+    "unchangedBaseModuleIndexes": [
+      1,
+      3,
+      4,
+      5,
+      7,
+      8,
+      10,
+      11,
+      13,
+      15,
+      16,
+      18,
+      19,
+      22,
+      24
+    ],
     "suites": [
       {
-        "suite": "combined-and-simpler-forms",
-        "passed": 22,
-        "count": 22
+        "suite": "workspace-navigation-monitoring",
+        "passed": 20,
+        "count": 20,
+        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
       },
       {
-        "suite": "bilateral-block-dose",
-        "passed": 23,
-        "count": 23
+        "suite": "camera-calibration-gallery",
+        "passed": 20,
+        "count": 20,
+        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
+      },
+      {
+        "suite": "camera-async-case-boundaries",
+        "passed": 10,
+        "count": 10,
+        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
+      },
+      {
+        "suite": "chart-bands-cursor-range",
+        "passed": 19,
+        "count": 19,
+        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
+      },
+      {
+        "suite": "reports-three-presentations",
+        "passed": 17,
+        "count": 17,
+        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
       },
       {
         "suite": "preserved-regression",
         "passed": 16,
-        "count": 16
+        "count": 16,
+        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
       },
       {
-        "suite": "focused-real-pdf",
-        "passed": 7,
-        "count": 7
+        "suite": "bilateral-block-dose",
+        "passed": 23,
+        "count": 23,
+        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
+      },
+      {
+        "suite": "combined-and-simpler-forms",
+        "passed": 22,
+        "count": 22,
+        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
+      },
+      {
+        "suite": "cri-multidrug-regression",
+        "passed": 24,
+        "count": 24,
+        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
+      },
+      {
+        "suite": "reset",
+        "passed": 20,
+        "count": 20,
+        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
       }
+    ],
+    "limitations": [
+      "Sin prueba de cámara, monitor o teclado Android físico.",
+      "Sin validación de exactitud clínica del OCR.",
+      "La comprobación offline combina recarga local y service worker simulado."
     ]
   },
   "files": [
@@ -47,8 +113,8 @@
     },
     {
       "path": "GUIA_FUNCIONES.md",
-      "bytes": 9364,
-      "sha256": "8791ce044ba5f8c82ae87174156095e62d57be873117506ae0cbbe0b08879267"
+      "bytes": 9555,
+      "sha256": "2a816ea7ec7f6013d990e0cba246f96815cc2f2d6494ded6b9f3ac770e837460"
     },
     {
       "path": "icons/apple-touch-icon.png",
@@ -82,38 +148,48 @@
     },
     {
       "path": "index.html",
-      "bytes": 2454470,
-      "sha256": "6471755a6501ab44f8bff94c9a038864872bcafd37dd97e2d587dbc8478e9035"
+      "bytes": 2525683,
+      "sha256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
+    },
+    {
+      "path": "INFORMES.md",
+      "bytes": 2139,
+      "sha256": "49a869abe9e931f7c87d41cacf94efc0be60702633892cfb66754283bdc55eed"
     },
     {
       "path": "LEEME.md",
-      "bytes": 2470,
-      "sha256": "8a20484701e3f4d7f81543aa47822a85d87911529efcfb17ac2891d10266d0b2"
+      "bytes": 5219,
+      "sha256": "2d82bb6ab6a9e62ea3e56cc96eefd25d5b61436b946f4d13b1dfc67ea78e9e52"
     },
     {
       "path": "LIMITACIONES.md",
-      "bytes": 3215,
-      "sha256": "89d8c82c162d8d8845fa18a98bf5b43eaf2b98e3e8a501b4c2fcb87391f24213"
+      "bytes": 3759,
+      "sha256": "1bdb4e7145600b5f29644967b45c7fb0951253f79b606b801425eb64fc820e99"
     },
     {
       "path": "manifest.webmanifest",
-      "bytes": 971,
-      "sha256": "51eba832cc7b78195db7364dd1ce15bd16c428774c16575bbe52894504743fe2"
+      "bytes": 969,
+      "sha256": "740d7948f7438e67e591cd16b698557a067aad910439c1d1497315b79dd5ec39"
     },
     {
       "path": "PROTOCOLO_DISPOSITIVOS.md",
-      "bytes": 4256,
-      "sha256": "5c4b47741015bfd10aafd19933e377e0c4214871dbae37e50d59ab3d14d518b6"
+      "bytes": 5311,
+      "sha256": "9e7a92b966fcf019c31dbc3a3d535cbdb01b47d27ebf528fcb167db2a7a1cae7"
     },
     {
       "path": "PRUEBAS.md",
-      "bytes": 3660,
-      "sha256": "d68cc796684b03fc8258b4abd1925c1c14e87668e206df1033b49c1f55faf8cd"
+      "bytes": 5006,
+      "sha256": "3a5ad159226f810186501c7b1a02ab9decd63adf489f3044fda1053cf8a1807a"
+    },
+    {
+      "path": "REFERENCIAS_GRAFICO.md",
+      "bytes": 3793,
+      "sha256": "6740df9a0df35c7d3135c9b0d1192e6e98ee0117859a99052f2b97571e2f3b98"
     },
     {
       "path": "sw.js",
-      "bytes": 3301,
-      "sha256": "504d79666c9a6084dd2e624225f902c8656d986a7448847bc59dde42ee4570b9"
+      "bytes": 3297,
+      "sha256": "2d6492884bd24e9a51b24cb741fc1c1923eefae7834d0f8b7e2281fbcec1548b"
     },
     {
       "path": "_headers",
