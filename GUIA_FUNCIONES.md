@@ -1,3 +1,7 @@
+# Actualización 3.23
+
+Consultá LEEME.md para las modalidades Lite/Completo y los informes 3.23. Las funciones de base descritas a continuación se conservan.
+
 # Anestesia Vet 3.22
 
 Para la navegación compacta, el gráfico por bandas, cámara/perfiles y los nuevos informes, consultá LEEME.md e INFORMES.md. El texto siguiente describe las funciones conservadas de la base.

@@ -1,3 +1,7 @@
+# Actualización 3.23
+
+Consultá LEEME.md para las modalidades Lite/Completo y los informes 3.23. Las funciones de base descritas a continuación se conservan.
+
 # Referencias de diseño del gráfico 3.22
 
 Consulta: 21 de octubre de 2026. Las referencias públicas se usaron para estudiar organización y flujo de documentación, sin copiar código, imágenes, iconos ni una interfaz comercial. No se tuvo acceso a sus cuentas clínicas o implementaciones internas.

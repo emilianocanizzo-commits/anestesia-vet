@@ -1,27 +1,130 @@
 {
-  "version": "3.22",
-  "date": "2026-10-21",
+  "version": "3.23",
+  "date": "2026-10-24",
+  "baseVersion": "3.22",
+  "indexSHA256": "51574464e31be87e16745369c77a225c05b09bbb75c55c026a9b02e1198818f5",
   "tests": {
-    "passed": 191,
-    "total": 191,
+    "passed": 308,
+    "total": 308,
+    "suites": [
+      {
+        "suite": "modes",
+        "count": 25,
+        "passed": 25,
+        "indexSHA256": "51574464e31be87e16745369c77a225c05b09bbb75c55c026a9b02e1198818f5"
+      },
+      {
+        "suite": "review",
+        "count": 19,
+        "passed": 19,
+        "indexSHA256": "51574464e31be87e16745369c77a225c05b09bbb75c55c026a9b02e1198818f5"
+      },
+      {
+        "suite": "offline",
+        "count": 8,
+        "passed": 8,
+        "indexSHA256": "51574464e31be87e16745369c77a225c05b09bbb75c55c026a9b02e1198818f5"
+      },
+      {
+        "suite": "reports",
+        "count": 26,
+        "passed": 26,
+        "indexSHA256": "51574464e31be87e16745369c77a225c05b09bbb75c55c026a9b02e1198818f5"
+      },
+      {
+        "suite": "general",
+        "count": 16,
+        "passed": 16,
+        "indexSHA256": "51574464e31be87e16745369c77a225c05b09bbb75c55c026a9b02e1198818f5"
+      },
+      {
+        "suite": "bilateral",
+        "count": 23,
+        "passed": 23,
+        "indexSHA256": "51574464e31be87e16745369c77a225c05b09bbb75c55c026a9b02e1198818f5"
+      },
+      {
+        "suite": "cri",
+        "count": 24,
+        "passed": 24,
+        "indexSHA256": "51574464e31be87e16745369c77a225c05b09bbb75c55c026a9b02e1198818f5"
+      },
+      {
+        "suite": "forms",
+        "count": 22,
+        "passed": 22,
+        "indexSHA256": "51574464e31be87e16745369c77a225c05b09bbb75c55c026a9b02e1198818f5"
+      },
+      {
+        "suite": "reset",
+        "count": 20,
+        "passed": 20,
+        "indexSHA256": "51574464e31be87e16745369c77a225c05b09bbb75c55c026a9b02e1198818f5"
+      },
+      {
+        "suite": "camera",
+        "count": 20,
+        "passed": 20,
+        "indexSHA256": "51574464e31be87e16745369c77a225c05b09bbb75c55c026a9b02e1198818f5"
+      },
+      {
+        "suite": "races",
+        "count": 10,
+        "passed": 10,
+        "indexSHA256": "51574464e31be87e16745369c77a225c05b09bbb75c55c026a9b02e1198818f5"
+      },
+      {
+        "suite": "chart",
+        "count": 19,
+        "passed": 19,
+        "indexSHA256": "51574464e31be87e16745369c77a225c05b09bbb75c55c026a9b02e1198818f5"
+      },
+      {
+        "suite": "liteCamera",
+        "count": 20,
+        "passed": 20,
+        "indexSHA256": "51574464e31be87e16745369c77a225c05b09bbb75c55c026a9b02e1198818f5"
+      },
+      {
+        "suite": "liteRaces",
+        "count": 10,
+        "passed": 10,
+        "indexSHA256": "51574464e31be87e16745369c77a225c05b09bbb75c55c026a9b02e1198818f5"
+      },
+      {
+        "suite": "liteCri",
+        "count": 24,
+        "passed": 24,
+        "indexSHA256": "51574464e31be87e16745369c77a225c05b09bbb75c55c026a9b02e1198818f5"
+      },
+      {
+        "suite": "liteForms",
+        "count": 22,
+        "passed": 22,
+        "indexSHA256": "51574464e31be87e16745369c77a225c05b09bbb75c55c026a9b02e1198818f5"
+      }
+    ],
     "uncaughtJavaScriptErrors": 0,
-    "physicalDeviceTests": false,
     "desktopBrowsers": [
       "Chrome",
       "Microsoft Edge"
     ],
+    "physicalDeviceTests": false,
+    "viewportEmulation": true,
     "keyboardViewportEmulation": true,
-    "pdfGenerated": 4,
-    "pdfRenderedPages": 21,
+    "realOfflineReload": true,
+    "pdfGenerated": 6,
+    "pdfRenderedPages": 18,
     "pdfVisualReviewed": true,
-    "unchangedBaseModules": 15,
     "unchangedBaseModuleIndexes": [
       1,
+      2,
       3,
       4,
       5,
-      7,
+      6,
       8,
+      9,
       10,
       11,
       13,
@@ -29,75 +132,13 @@
       16,
       18,
       19,
+      20,
+      21,
       22,
-      24
-    ],
-    "suites": [
-      {
-        "suite": "workspace-navigation-monitoring",
-        "passed": 20,
-        "count": 20,
-        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
-      },
-      {
-        "suite": "camera-calibration-gallery",
-        "passed": 20,
-        "count": 20,
-        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
-      },
-      {
-        "suite": "camera-async-case-boundaries",
-        "passed": 10,
-        "count": 10,
-        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
-      },
-      {
-        "suite": "chart-bands-cursor-range",
-        "passed": 19,
-        "count": 19,
-        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
-      },
-      {
-        "suite": "reports-three-presentations",
-        "passed": 17,
-        "count": 17,
-        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
-      },
-      {
-        "suite": "preserved-regression",
-        "passed": 16,
-        "count": 16,
-        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
-      },
-      {
-        "suite": "bilateral-block-dose",
-        "passed": 23,
-        "count": 23,
-        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
-      },
-      {
-        "suite": "combined-and-simpler-forms",
-        "passed": 22,
-        "count": 22,
-        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
-      },
-      {
-        "suite": "cri-multidrug-regression",
-        "passed": 24,
-        "count": 24,
-        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
-      },
-      {
-        "suite": "reset",
-        "passed": 20,
-        "count": 20,
-        "indexSHA256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
-      }
-    ],
-    "limitations": [
-      "Sin prueba de cámara, monitor o teclado Android físico.",
-      "Sin validación de exactitud clínica del OCR.",
-      "La comprobación offline combina recarga local y service worker simulado."
+      23,
+      24,
+      25,
+      27
     ]
   },
   "files": [
@@ -108,13 +149,13 @@
     },
     {
       "path": "CALCULOS.md",
-      "bytes": 6054,
-      "sha256": "911b40fd02688856c0deee35d4f47f96e7c9d73d5c77f754316487d13ac5a17c"
+      "bytes": 6215,
+      "sha256": "772dc0ba8b9509c3bb11ea0899c0ed00d6a0088672589d9a37c0d08f4ecde499"
     },
     {
       "path": "GUIA_FUNCIONES.md",
-      "bytes": 9555,
-      "sha256": "2a816ea7ec7f6013d990e0cba246f96815cc2f2d6494ded6b9f3ac770e837460"
+      "bytes": 9716,
+      "sha256": "560b4c95bc464b478f7ccee3318bbc50e2f135950eec9190a21c4b8315ab33e8"
     },
     {
       "path": "icons/apple-touch-icon.png",
@@ -148,48 +189,48 @@
     },
     {
       "path": "index.html",
-      "bytes": 2525683,
-      "sha256": "bc20044212b12765096ef33dfe47646a738e786a63be756615713a53e483a512"
+      "bytes": 2573778,
+      "sha256": "51574464e31be87e16745369c77a225c05b09bbb75c55c026a9b02e1198818f5"
     },
     {
       "path": "INFORMES.md",
-      "bytes": 2139,
-      "sha256": "49a869abe9e931f7c87d41cacf94efc0be60702633892cfb66754283bdc55eed"
+      "bytes": 2674,
+      "sha256": "34764c39f529bddb6f7729b66aeb00b3ddedaad404645a87a73a53f1dd96605b"
     },
     {
       "path": "LEEME.md",
-      "bytes": 5219,
-      "sha256": "2d82bb6ab6a9e62ea3e56cc96eefd25d5b61436b946f4d13b1dfc67ea78e9e52"
+      "bytes": 6224,
+      "sha256": "2287cbc7da078d719b75b439cdb45e8d20d8f84b175df69533e0895e9f816c28"
     },
     {
       "path": "LIMITACIONES.md",
-      "bytes": 3759,
-      "sha256": "1bdb4e7145600b5f29644967b45c7fb0951253f79b606b801425eb64fc820e99"
+      "bytes": 4441,
+      "sha256": "ddeea7a1385b79034272956a806c66f8a5d3a5fbaeeb721cbc9e22fa5f34e48f"
     },
     {
       "path": "manifest.webmanifest",
       "bytes": 969,
-      "sha256": "740d7948f7438e67e591cd16b698557a067aad910439c1d1497315b79dd5ec39"
+      "sha256": "4a25bc5127c48b828872ba1df64b167cd43b28d0a44cabf28b516e396b4ecbfa"
     },
     {
       "path": "PROTOCOLO_DISPOSITIVOS.md",
-      "bytes": 5311,
-      "sha256": "9e7a92b966fcf019c31dbc3a3d535cbdb01b47d27ebf528fcb167db2a7a1cae7"
+      "bytes": 6283,
+      "sha256": "9dfaed2be94eb50e6093810fe38f7845314c5cc5ef2e31718f4250ec86b567ab"
     },
     {
       "path": "PRUEBAS.md",
-      "bytes": 5006,
-      "sha256": "3a5ad159226f810186501c7b1a02ab9decd63adf489f3044fda1053cf8a1807a"
+      "bytes": 3332,
+      "sha256": "8eadaddf256f400a06c1f79e6f6c1f0f0df7ac459f741bf79bad490c20c7abd8"
     },
     {
       "path": "REFERENCIAS_GRAFICO.md",
-      "bytes": 3793,
-      "sha256": "6740df9a0df35c7d3135c9b0d1192e6e98ee0117859a99052f2b97571e2f3b98"
+      "bytes": 3954,
+      "sha256": "4680b79649d9781b871fe66644db4aee12079aa925f1ee9811bbfca9bb1638c2"
     },
     {
       "path": "sw.js",
       "bytes": 3297,
-      "sha256": "2d6492884bd24e9a51b24cb741fc1c1923eefae7834d0f8b7e2281fbcec1548b"
+      "sha256": "5ee38f30a5e4cdbb848b9d3d4e51d1bb6360a9461917c32033137ed187a440c7"
     },
     {
       "path": "_headers",

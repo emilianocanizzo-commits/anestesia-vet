@@ -1,3 +1,7 @@
+# Actualización 3.23
+
+Consultá LEEME.md para las modalidades Lite/Completo y los informes 3.23. Las funciones de base descritas a continuación se conservan.
+
 # Informes de Anestesia Vet 3.22
 
 La pestaña Ficha final ofrece dos presentaciones principales:
@@ -14,3 +18,8 @@ Los resúmenes incluyen hasta las últimas tres evaluaciones de recuperación; c
 El **Informe de auditoría** permanece accesible en su desplegable adicional. Conserva la trazabilidad y los borradores identificados de las versiones anteriores.
 
 Cada presentación tiene vista previa y nombre de PDF propio. El archivo se genera localmente con texto seleccionable y sin enviar la ficha a un servidor. Elegir una presentación no modifica los registros clínicos. El botón de descarga existente utiliza la presentación elegida.
+
+
+## Cambios 3.23
+
+Los tres formatos funcionan en Lite y Completo. Los resúmenes omiten también las últimas lecturas individuales: no incluyen checklists, gráfico de curvas ni detalle de mediciones. Puede incorporarse logo del centro y firma digitalizada autorizada guardados en la misma ficha, desde Veterinaria y firma del informe. No se inventan imágenes ni firmas.

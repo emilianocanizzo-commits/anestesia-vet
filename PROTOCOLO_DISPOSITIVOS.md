@@ -1,3 +1,7 @@
+# Actualización 3.23
+
+Consultá LEEME.md para las modalidades Lite/Completo y los informes 3.23. Las funciones de base descritas a continuación se conservan.
+
 # Protocolo pendiente de verificación física
 
 Fecha de preparación: 19 de octubre de 2026. Estas pruebas están preparadas y **no fueron ejecutadas** en dispositivos físicos durante esta entrega. Usar un caso ficticio sin pacientes identificables.
@@ -44,3 +48,12 @@ Generar ambos PDF con mezcla, bloqueo y fotografías confirmadas. Revisar que fi
 3. Abrir cámara con una foto histórica guardada; distinguir video y guía fantasma. Reiniciar, cerrar, enviar al fondo y volver: comprobar permiso, liberación de cámara y reintento. Tomar varias fotos y confirmar que quedan pendientes sin OCR.
 4. Elegir, crear, editar y restablecer perfiles; verificar que conserva versiones y fotos previas. Cambiar de paciente durante una selección lenta y comprobar que no aparece la referencia anterior.
 5. Descargar los informes completo, colega, tutor y auditoría en el teléfono; comprobar apertura, legibilidad y contenido. Exportar y restaurar un respaldo de prueba con JSON y .avphotos antes de usar datos reales.
+
+
+## Pendiente en dispositivo físico · 3.23
+
+1. En Chrome Android, crear un caso Lite y otro Completo; cambiar de modo con datos y borradores, cerrar/reabrir y comprobar archivo/pacientes correctos.
+2. Probar cuatro etapas, seis acciones, teclado, vertical/horizontal y tema oscuro, sin desbordes ni saltos.
+3. Capturar varias fotos con la cámara física; guía fantasma, calibración reutilizable, OCR y galería; comprobar datos antes de confirmar, perfilar otro monitor y reabrir el caso.
+4. Abrir seguridad, guardar varios checks, cerrar y volver: pendientes/fallidos y excepción documentada deben conservarse.
+5. Con una ficha ficticia, descargar y abrir los tres PDF desde cada modo, con logo/firma autorizada si se usa. Restaurar JSON y paquete de fotos de prueba antes de trabajar con datos reales.

@@ -1,3 +1,7 @@
+# Actualización 3.23
+
+Consultá LEEME.md para las modalidades Lite/Completo y los informes 3.23. Las funciones de base descritas a continuación se conservan.
+
 # Bloqueos bilaterales: alcance de la dosis, 3.21.2
 
 Para una dosis en mg/kg: volumen de la dosis ingresada (mL) = dosis (mg/kg) × peso (kg) ÷ concentración (mg/mL).

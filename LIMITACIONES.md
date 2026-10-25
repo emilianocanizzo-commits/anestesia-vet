@@ -1,3 +1,7 @@
+# Actualización 3.23
+
+Consultá LEEME.md para las modalidades Lite/Completo y los informes 3.23. Las funciones de base descritas a continuación se conservan.
+
 # Límites conocidos de Anestesia Vet 3.22
 
 - Las pruebas no validan exactitud clínica del OCR. Cada foto exige revisión humana antes de crear o corregir una medición; una coincidencia geométrica correcta no acredita que los dígitos estén bien reconocidos.
@@ -17,3 +21,10 @@
 - Las pruebas de navegación incluyen Chrome y Edge de escritorio, tamaños de teléfono/tablet y reducción del área visible para simular teclado. No sustituyen una prueba con Chrome Android y su teclado/cámara físicos.
 - El cursor del gráfico distingue lecturas cercanas y sus horas. Las bandas son escalas de visualización ajustadas a los datos, sin umbrales de normalidad ni recomendaciones clínicas.
 - Los resúmenes PDF reproducen registros y notas confirmados; no constituyen por sí mismos un alta ni instrucciones de tratamiento.
+
+
+## Modalidades 3.23
+
+- La selección es presentación del mismo caso, no una verificación clínica. Los datos ausentes no se consideran normales y los checklists no se aprueban automáticamente.
+- Sin cámara, monitor o teclado Android físicos durante las pruebas. Se verificó recarga offline real local; OCR y dictado externos mantienen sus requisitos previos.
+- Logo y firma son recursos opcionales por caso. La firma digitalizada representa autorización declarada, no certificación criptográfica de identidad.

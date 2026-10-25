@@ -1,44 +1,58 @@
-# Anestesia Vet 3.22
+# Anestesia Vet 3.23
 
-Actualización de la app completa 3.21.5. Fecha: 21 de octubre de 2026. El ZIP contiene una aplicación funcional para alojamiento estático, con los datos clínicos y fotografías guardados en el dispositivo como en las versiones anteriores.
+Actualización del 24 de octubre de 2026 sobre la versión 3.22. El paquete contiene una sola aplicación estática, lista para actualizar el mismo sitio de GitHub Pages.
 
-## Monitorización y navegación
+## Elegir modalidad
 
-- Al elegir una pestaña principal, su título queda visible debajo de la navegación fija. Las actualizaciones dentro de un formulario no vuelven a llevar la página a la barra de pestañas.
-- Monitorización comienza con **Registrar parámetros**, **Agregar evento**, **Capturar monitor** y **Abrir galería**, junto a los últimos valores registrados y la hora propia de cada uno.
-- Los formularios, gráfico, tabla y herramientas fotográficas se despliegan cuando se necesitan. Parámetros y eventos están antes del gráfico; ocultar una vista no elimina sus datos. Se recuerda el estado de las vistas por caso durante la sesión.
-- Registrar mediciones o eventos mantiene abierto el formulario. Los formularios rápidos del panel usan los mismos controles y las mismas rutas de guardado.
+Al iniciar una nueva anestesia aparecen dos tarjetas: **Modo Completo** y **Modo Lite**. La elección se guarda dentro de esa anestesia. Desde esa pantalla también se puede entrar directamente a **Pacientes e historial**.
 
-## Cámara y calibración
+Los casos históricos sin modalidad se abren en Completo, sin volver a pedir la elección. Cada caso conserva su propia modalidad al cerrarlo, reabrirlo o recargar la app. El botón **Cambiar modo de trabajo**, visible en el encabezado, permite cambiar en cualquier momento compatible con la operación en curso. Una lectura o captura fotográfica debe terminar antes de cambiar. La elección y los cambios quedan en el historial del caso.
 
-**Nueva captura / Reiniciar cámara** cierra la sesión previa y limpia la vista temporal sin borrar las fotos, mediciones ni perfiles. La cámara en vivo se distingue de la guía fantasma guardada, que se conserva como referencia de encuadre.
+Los dos modos usan el mismo caso, paciente, IndexedDB, autoguardado y formularios. Cambiar de modo no crea otra anestesia, administra medicamentos ni completa verificaciones.
 
-En **Fotografías, galería y perfiles de monitor** quedan accesibles Seleccionar perfil, Calibrar monitor, Editar calibración y Restablecer calibración. La calibración usa las cuatro esquinas y el círculo con cruz para los números. Editar o restablecer conserva una versión anterior; reemplazar un perfil existente requiere confirmación. La referencia puede tomarse con la cámara, importarse o elegirse entre las fotos del caso.
+## Modo Lite
 
-La galería sigue guardando fotos sucesivas sin ejecutar OCR, y permite importación múltiple, procesamiento inmediato o por lote, alineación, revisión, correcciones y confirmación expresa antes de incorporar mediciones. Los horarios de captura, importación, procesamiento y confirmación permanecen separados. Una importación sin EXIF no recibe silenciosamente la hora de importación como hora de medición.
+Cuatro etapas:
 
-## Gráfico de tendencias
+1. **Paciente y evaluación:** identificación, peso, procedimiento, profesionales, ASA, antecedentes, examen y signos esenciales. Los botones «Otros datos del paciente» y «Otros datos de evaluación» permiten ampliar los mismos formularios.
+2. **Plan anestésico:** premedicación, inducción, analgesia/CRI/bloqueos y fluidoterapia en tarjetas desplegables. Un acceso abre el mantenimiento en su formulario original. Se conservan los cálculos y las administraciones sucesivas.
+3. **Monitorización:** panel principal con seis acciones grandes, los ocho últimos parámetros con sus propias horas, mantenimiento confirmado, CRI activas, fluidoterapia y modificaciones documentadas. Debajo permanecen los formularios, ventilación, gráfico, tabla, cámara guiada, OCR, calibración y galería.
+4. **Recuperación e informe:** recuperación, escalas de dolor, medicación posoperatoria, observaciones e informes PDF.
 
-Un único componente muestra las variables en bandas, con escalas numéricas y unidades explícitas; PAS, PAM y PAD comparten la escala de presión. Los colores y símbolos son estables y la leyenda permite ocultar curvas sin borrar registros.
+Las acciones rápidas son **Registrar medición**, **Agregar medicamento**, **Agregar evento**, **Abrir cámara**, **Modificar CRI** y **Ver gráfico**. Los valores anteriores conservan su hora y antigüedad; una PAM calculada se identifica como estimada.
 
-El cursor temporal muestra lecturas reales y su propia hora; si usa una lectura cercana, lo indica con su distancia temporal. Se puede ver toda la anestesia, ventanas de 5, 10, 15 o 30 minutos, o un período específico, recorrer el tiempo y restablecer la vista. Los segmentos respetan la continuidad visual seleccionada y los huecos de datos. No se crean mediciones intermedias.
+## Modo Completo y verificaciones
 
-Las marcas muestran medicamentos, CRI, fluidos, ventilación y eventos documentados. Inicio y fin se toman de horarios clínicos explícitos. El panel permite guardar el **Fin anestésico documentado**, separado de la finalización administrativa de la ficha.
+Completo conserva las etapas y formularios clínicos de 3.22. El acceso secundario **Ver verificaciones de seguridad** abre los controles originales de equipo, preinducción, pausa y checklist general, también desde Lite.
 
-## Analgesia e informes
+Ocultar un checklist no sustituye su realización. Ningún punto se aprueba automáticamente. Los estados pendientes, fallidos y realizados se conservan al cambiar de modo. Para registrar el inicio anestésico en Lite se mantiene el control del equipo: si está pendiente o no aprobado se abre su verificación. El acceso excepcional existente requiere documentar el motivo y confirmar; no convierte el equipo en aprobado.
 
-Se mantienen **CRI + bloqueo**, las mezclas multifármaco con una bomba, las infusiones independientes, el cálculo bilateral por lado o total y los historiales. Cada categoría —Infusiones continuas, Bloqueos locorregionales y Otras administraciones— tiene acceso para agregar su técnica sin reemplazar las ya registradas.
+## Informes independientes
 
-Al generar PDF se puede elegir **Informe completo** o **Informe resumido**. El resumido ofrece **Colega veterinario** y **Propietario o tutor**. Las tres presentaciones usan el mismo registro; la auditoría anterior sigue disponible. El resumen para tutor usa datos y notas documentados y no genera indicaciones médicas ni conclusiones de normalidad. Se agrega un campo opcional **Veterinaria / centro** en Paciente.
+En ambos modos se elige **Informe completo** o **Informe resumido**, con destinatario **Colega veterinario** o **Propietario o tutor**. La auditoría adicional sigue disponible. Cambiar modalidad no cambia el formato de informe elegido.
 
-Se conservan los pacientes e historial, IndexedDB, respaldos, reinicio con pregunta de guardado, tablas numéricas en app y PDF, decúbito desplegable y las demás funciones previas. No reaparecen la revisión documental eliminada, Pulso · amplitud ni el selector Acción de fluidoterapia.
+El completo conserva la información efectivamente registrada y las verificaciones con sus estados reales. Los resúmenes omiten checklists, curvas y mediciones individuales. No se deducen resultados normales ni se inventan datos ausentes.
 
-## Actualizar en GitHub Pages
+En **Veterinaria y firma del informe** se puede guardar un centro, su logotipo y una firma digitalizada para esta anestesia. La firma solo se incorpora al autorizar expresamente su uso e indicar al profesional firmante. Es una imagen con autorización declarada, sin autenticación criptográfica. Sin imágenes cargadas no se generan logotipos ni firmas. Al cambiar el centro, las imágenes asociadas al centro anterior no aparecen como propias del nuevo. El respaldo JSON conserva los recursos guardados y su autorización.
 
-1. Descomprimí el ZIP y subí su contenido al mismo repositorio, en la raíz que ya publica la app.
-2. Conservá juntos `index.html`, `sw.js`, `manifest.webmanifest`, `.nojekyll` e `icons/`, con su estructura de carpetas. No requiere compilación ni claves.
-3. Confirmá los cambios y esperá el despliegue. Abrí la dirección habitual, cerrá las otras ventanas de la app y verificá el encabezado **3.22** después de actualizar.
+## Funciones conservadas
 
-El paquete también funciona en Netlify. Usar la misma dirección y navegador conserva el almacenamiento local. Los respaldos siguen siendo el JSON clínico y, para la galería completa, el paquete .avphotos del caso; el alojamiento web no es un respaldo de pacientes.
+OCR y PAM, cámara y guía fantasma, captura horizontal adaptable, giros y encuadre, calibración con esquinas y círculo con cruz, perfiles versionados, galería con Blob/IndexedDB, medicamentos y CRI de una o varias bombas, mezclas, bloqueos bilaterales, fluidoterapia, ventilación, eventos, gráficos y tabla numérica, recuperación/dolor, historial, auditoría, deshacer, borradores, JSON y Reiniciar ficha con opción de guardar.
 
-PRUEBAS.md describe la validación y su alcance. INFORMES.md explica las presentaciones PDF. REFERENCIAS_GRAFICO.md documenta las referencias de diseño. LIMITACIONES.md y PROTOCOLO_DISPOSITIVOS.md distinguen las pruebas automatizadas de las verificaciones físicas pendientes.
+La galería se respalda además con su paquete de fotografías `.avphotos`, como en 3.22. Conservar un JSON no sustituye ese respaldo de la galería.
+
+## Actualizar el mismo sitio
+
+1. Guardar una copia JSON y el paquete de fotografías de los casos que se quieran respaldar.
+2. Descomprimir `Anestesia_Vet_3_23_GitHub_Pages.zip`.
+3. Subir el contenido descomprimido a la raíz del mismo repositorio, reemplazando los archivos anteriores. Incluir `index.html`, `sw.js`, `manifest.webmanifest`, `icons/` y `.nojekyll`. No subir únicamente el ZIP.
+4. Confirmar los cambios en la rama que ya publica GitHub Pages y esperar que termine el despliegue.
+5. Abrir la misma dirección, verificar **Anestesia Vet 3.23** y reabrir un caso de prueba. Si la app instalada ofrece una actualización en «Uso y conexión», aplicarla cuando los cambios estén guardados. No borrar datos del navegador para actualizar.
+
+No se publicó automáticamente este paquete. Mantener la misma dirección y navegador permite acceder al mismo almacenamiento local. Cambiar de dirección, navegador o dispositivo requiere restaurar los respaldos correspondientes.
+
+## Sin conexión y pruebas
+
+Después de una primera carga completa, el service worker conserva la aplicación para reabrirla sin red. Se probó una recarga realmente sin conexión bajo una subcarpeta equivalente a GitHub Pages, con persistencia de Lite, cambios de modo, una medición y los tres PDF. El OCR o dictado que dependa de recursos externos conserva sus requisitos anteriores.
+
+Consultar `PRUEBAS.md` e `INTEGRIDAD.json` para el detalle verificable. Las pruebas móviles usan tamaños y entrada táctil simulados; no se ejecutaron en un teléfono Android físico ni se validó la exactitud clínica del OCR sobre un monitor real.
